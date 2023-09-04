@@ -5,36 +5,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: larger;
+      background-image: linear-gradient(to bottom, rgb(12, 1, 12), rgb(33, 13, 39));
+    }
+
+    .box {
+      color: rgb(255, 255, 255);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(to bottom, rgb(110, 33, 110), rgb(54, 19, 65));
+      padding: 35px;
+      border-radius: 30px;
+      width: 20%;
+    }
+
+    .box input {
+      border-radius: 5px;
+      border-color: rgb(255, 255, 255);
+      height: 25px;
+      width: 200px;
+    }
+
+    .inputBox {
+      position: relative;
+    }
+
+    .botao {
+      padding: 5px;
+    }
+  </style>
 </head>
 
 <body>
-  <form action="">
-    <label for="idNome">Nome Completo:</label><br>
-    <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome">
+  <div class="box">
+    <form action="">
+      <label for="idNome">Nome Completo:</label><br>
+      <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome">
 
-    <br><br>
-    <label for="idEmail">Email:</label><br>
-    <input type="email" id="idEmail" name="email" value="" placeholder="Email">
+      <br><br>
+      <div class="inputBox">
+        <label for="idEmail">Email:</label><br>
+        <input type="email" id="idEmail" name="email" value="" placeholder="Email">
+      </div>
 
-    <br><br>
-    <label for="idEmpresa">Empresa/Organização:</label><br>
-    <input type="text" id="idEmpresa" name="empresa" value="" placeholder="Empresa">
+      <br>
+      <div class="inputBox">
+        <label for="idEmpresa">Empresa/Organização:</label><br>
+        <input type="text" id="idEmpresa" name="empresa" value="" placeholder="Empresa">
+      </div>
 
-    <br><br>
-    <label for="idTel">Telefone:</label><br>
-    <input type="text" id="idTel" name="telefone" value="" placeholder="Telefone">
+      <br>
+      <div class="inputBox">
+        <label for="idTel">Telefone:</label><br>
+        <input type="text" id="idTel" name="telefone" value="" placeholder="Telefone">
+      </div>
 
-    <br><br>
-    <label for="idContato">Motivo do Contato:</label><br>
-    <input type="text" id="idContato" name="contato" value="" placeholder="Contato">
+      <br>
+      <div class="inputBox">
+        <label for="idContato">Motivo do Contato:</label><br>
+        <input type="text" id="idContato" name="contato" value="" placeholder="Contato">
+      </div>
 
-    <br><br>
-    <label for="idMsg">Mensagem:</label><br>
-    <textarea id="idMsg" name="msg" value="" placeholder="Mensagem" cols="30" rows="10"></textarea>
+      <br><br>
+      <div class="inputBox">
+        <label for="idMsg">Mensagem:</label><br>
+        <textarea id="idMsg" name="msg" value="" placeholder="Mensagem" cols="30" rows="10"></textarea>
+      </div>
 
-    <br><br>
-    <button type="submit">Enviar</button>
-  </form>
+      <div class="botao">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
