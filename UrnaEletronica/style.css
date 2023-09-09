@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(209, 209, 209);
+}
+
+.container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloPagina {
+  font-size: 45px;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+.fotoCandidata {
+  width: 25%;
+  margin-bottom: 30px;
+  border: 7px solid rgb(228, 228, 228);
+}
+
+.nomeCandidata {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#numCandidato {
+  margin-bottom: 30px;
+  width: 250px;
+  padding: 20px;
+  text-align: start;
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.bttForm {
+  padding: 10px 15px;
+  margin: 10px;
+  border: 2px solid rgb(128, 127, 127);
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#bttConfirmar:hover {
+  background-color: rgb(20, 105, 20);
+  color: rgb(253, 253, 253);
+}
+
+#bttCancelar:hover {
+  background-color: rgb(218, 8, 8);
+  color: rgb(255, 255, 255);
+}
+
+#bttBranco:hover {
+  background-color: rgb(255, 255, 255);
+}
