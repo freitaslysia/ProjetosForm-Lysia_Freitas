@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="box">
+    <fieldset>
+      <legend>Deixe seu Recado</legend>
+
+      <form action="">
+        <div class="inputBox">
+          <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome Completo" required>
+        </div>
+
+        <br>
+        <div class="inputBox">
+          <input type="email" id="idEmail" name="email" value="" placeholder="seu@email.com" required autocomplete="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        </div>
+
+        <br>
+        <div class="inputBox">
+          <input type="text" id="idEmpresa" name="empresa" value="" placeholder="Empresa/Organização">
+        </div>
+
+        <br>
+        <div class="inputBox">
+          <input type="text" id="idTel" name="telefone" value="" placeholder="+55 (  ) xxxxx-xxxx ">
+        </div>
+
+        <br>
+        <div class="inputContato">
+          <select class="opcoes" id="idContato" name="motivos" required>
+            <option value="" disabled selected>Motivo do Contato</option>
+            <option value="Elogio">Elogio</option>
+            <option value="Reclamacao">Reclamação</option>
+            <option value="Duvida">Dúvida</option>
+            <option value="Sugestao">Sugestão</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+
+        <br><br>
+        <div class="inputBox">
+          <textarea id="idMsg" name="msg" value="" placeholder="Mensagem" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+  </div>
+  </fieldset>
+</body>
+
+</html>
