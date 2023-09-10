@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin-left: 25%;
+  width: 30%;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+label[for="nome"],
+label[for="sobrenome"],
+label[for="dataNascimento"],
+label[for="endereco"],
+label[for="mae"],
+label[for="pai"],
+label[for="telefone"],
+label[for="email"],
+label[for="serie"],
+label[for="genero"],
+label[for="necessidadesEspeciais"] {
+  text-align: left;
+  margin-left: 82px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 35px;
+}
+
+.radioSexo {
+  text-align: left;
+  margin-left: 77px;
+}
+
+.checkbox-group {
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 80px;
+  padding-bottom: 20px;
+}
+
+#dataNascimento {
+  width: 55%;
+  height: 35px;
+  border-color: #ccc;
+}

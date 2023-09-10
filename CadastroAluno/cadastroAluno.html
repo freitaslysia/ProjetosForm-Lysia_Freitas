@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Aluno</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <fieldset>
+            <legend>Cadastro do Aluno</legend>
+            <form action="" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required min="2000-01-01" max="2017-12-31">
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="mae">Nome da Mãe:</label>
+                <input type="text" id="mae" name="mae" required>
+
+                <label for="pai">Nome do Pai:</label>
+                <input type="text" id="pai" name="pai" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="serie">Série:</label>
+                <input type="number" id="serie" name="serie" min="1" max="9" required>
+
+                <label for="genero">Sexo</label>
+                <div class="radioSexo">
+                    <input type="radio" id="feminino" name="genero" value="feminino">Feminino<br>
+                    <input type="radio" id="masculino" name="genero" value="masculino">Masculino
+                </div>
+
+                <label for="necessidadesEspeciais">Necessidades Especiais</label>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="necessidade1" name="necessidades[]" value="necessidade1">Deficiência Auditiva<br>
+                    <input type="checkbox" id="necessidade2" name="necessidades[]" value="necessidade2">Deficiência Motora<br>
+                    <input type="checkbox" id="necessidade3" name="necessidades[]" value="necessidade3">Deficiência Visual<br>
+                    <input type="checkbox" id="necessidade3" name="necessidades[]" value="necessidade3">Paralisia Cerebral<br>
+                    <input type="checkbox" id="necessidade3" name="necessidades[]" value="necessidade3">Perturbação do Espectro Autista<br>
+                    <input type="checkbox" id="necessidade3" name="necessidades[]" value="necessidade3">Perturbação do Foro Psicológico<br>
+                    <input type="checkbox" id="necessidade3" name="necessidades[]" value="necessidade3">Perturbação de Aprendizagem<br>
+                    <input type="checkbox" id="necessidade3" name="necessidades[]" value="necessidade3">Altas Habilidades
+                </div>
+
+                <button type="submit">Enviar</button>
+                <button type="clear">Limpar Tela</button>
+            </form>
+    </div>
+</body>
+
+</html>
